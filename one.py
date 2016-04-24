@@ -4,7 +4,6 @@
 __author__ = 'Тупиков Павел'        
 __version__ = 1.0
 
-from time import clock
 
 def deley(integer):
     for s in sim:
@@ -12,15 +11,6 @@ def deley(integer):
             i1 = s
             i2 = integer//s
     return i1,i2
-
-def benchmark(func):
-    def wrapper(*args, **kwargs):
-        t = time.clock()
-        res = func(*args, **kwargs)
-        print(func.__name__, time.clock() - t)
-        return res
-    return wrappe
-
 
 if __name__ == '__main__':
 
